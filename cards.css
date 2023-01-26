@@ -1,6 +1,7 @@
 body{
     margin: 0px;
-    background-color: #ebebeb;
+    background: linear-gradient(45deg, #ebebeb 25%, #f4f4f4 25%, #f4f4f4 50%, #ebebeb 50%, #ebebeb 75%, #f4f4f4 75%, #f4f4f4);
+    background-size: 40px 40px;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -162,12 +163,12 @@ body{
     padding: 0vmin 2vmin;
 }
 .card-swiper-buttons > button{
-    font-size: 5vmin;
-    border: 0.4vmin solid #4b4b4b;
+    font-size: 4vmin;
+    border: 0.75vmin solid #4b4b4b;
     transition: 500ms;
     border-radius: 100%;
     color: #4b4b4b;
-    background-color: transparent;
+    background-color: whitesmoke;
     height: 8vmin;
     width: 8vmin;
     display: grid;
@@ -176,12 +177,12 @@ body{
 }
 /* button hover color */
 #next-button:hover{
-    border: 0.4vmin solid #7ecbff;
+    border: 1vmin solid #7ecbff;
     transition: 250ms;
     color: #7ecbff;
 }
 #back-button:hover{
-    border: 0.4vmin solid #ff5f5f;
+    border: 1vmin solid #ff5f5f;
     transition: 250ms;
     color: #ff5f5f;
 }
