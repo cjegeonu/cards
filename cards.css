@@ -51,7 +51,7 @@ body{
     background-size: cover;
 }
 .big-card{
-    border-radius: 1vmin;
+    border-radius: 5vmin;
 }
 .little-card{
     width: 12vmin;
