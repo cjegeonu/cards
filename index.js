@@ -18,22 +18,6 @@ const handleNextClick = () => {
     });
 }
 // Back button handler
-// const handleBackClick = () => {
-//     const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
-
-//     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
-//         nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
-
-//     currentGroup.dataset.status = "before";
-
-//     nextGroup.dataset.status = "becoming-active-from-after";
-
-//     setTimeout(() => {
-//         nextGroup.dataset.status = "active";
-//         activeIndex = nextIndex;
-//     });
-// }
-
 const handleBackClick = () => {
     const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
 
