@@ -1,10 +1,15 @@
 body{
     margin: 0px;
     background: linear-gradient(45deg, #ebebeb 25%, #f4f4f4 25%, #f4f4f4 50%, #ebebeb 50%, #ebebeb 75%, #f4f4f4 75%, #f4f4f4);
+    animation: move 5s linear infinite;
     background-size: 40px 40px;
     height: 100vh;
     display: grid;
     place-items: center;
+}
+@keyframes move{
+    from {background-position: bottom left;}
+    to {background-position: top right;}
 }
 
 .card-groups,
@@ -164,25 +169,42 @@ body{
 }
 .card-swiper-buttons > button{
     font-size: 4vmin;
-    border: 0.75vmin solid #4b4b4b;
+    border: .75vmin solid #4b4b4b;
     transition: 500ms;
     border-radius: 100%;
-    color: #4b4b4b;
-    background-color: whitesmoke;
+    color: #fff;
+    background-color: #4b4b4b;
     height: 8vmin;
     width: 8vmin;
     display: grid;
     place-items: center;
     cursor: pointer;
+    box-shadow: 0 0 0 1px #303030 inset,
+    0 0 0 2px rgba(255,255,255,0.15) inset,
+    0 8px 0 0 #303030,
+    0 8px 0 1px rgba(0,0,0,0.4),
+    0 8px 8px 1px rgba(0,0,0,0.5);
 }
 /* button hover color */
 #next-button:hover{
-    border: 1vmin solid #7ecbff;
+    border: 1vmin solid #7fccde;
+    background-color: #7fccde;
     transition: 250ms;
-    color: #7ecbff;
+    color: #fff;
+	box-shadow: 0 0 0 1px #4b7882 inset,
+	0 0 0 2px rgba(255,255,255,0.15) inset,
+	0 8px 0 0 #4b7882,
+	0 8px 0 1px rgba(0,0,0,.4),
+	0 8px 8px 1px rgba(0,0,0,0.4);
 }
 #back-button:hover{
-    border: 1vmin solid #ff5f5f;
+    border: 1vmin solid #fa5a5a;
+    background-color: #fa5a5a;
     transition: 250ms;
-    color: #ff5f5f;
+    color: #fff;
+    box-shadow: 0 0 0 1px #C24032 inset,
+    0 0 0 2px rgba(255,255,255,0.15) inset,
+    0 8px 0 0 #C24032,
+    0 8px 0 1px rgba(0,0,0,0.4),
+    0 8px 8px 1px rgba(0,0,0,0.5);
 }
