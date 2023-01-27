@@ -1,16 +1,17 @@
 body{
     margin: 0px;
     background: linear-gradient(45deg, #ebebeb 25%, #f4f4f4 25%, #f4f4f4 50%, #ebebeb 50%, #ebebeb 75%, #f4f4f4 75%, #f4f4f4);
-    animation: move 5s linear infinite;
+    /* animation: move 5s linear infinite; */
     background-size: 40px 40px;
     height: 100vh;
     display: grid;
     place-items: center;
 }
-@keyframes move{
-    from {background-position: bottom left;}
-    to {background-position: top right;}
-}
+/* This moving background effect causes CPU usage to spike up, resulting in everything appearing to lag. */
+/* @keyframes move{
+    from {background-position: top right;}
+    to {background-position: bottom right;}
+} */
 
 .card-groups,
 .card-group,
@@ -169,21 +170,21 @@ body{
 }
 .card-swiper-buttons > button{
     font-size: 4vmin;
-    border: .75vmin solid #4b4b4b;
+    border: .75vmin solid #d4d4d4;
     transition: 500ms;
     border-radius: 100%;
     color: #fff;
-    background-color: #4b4b4b;
+    background-color: #d4d4d4;
     height: 8vmin;
     width: 8vmin;
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 0 0 0 1px #303030 inset,
+    box-shadow: 0 0 0 1px #bbbbbb inset,
     0 0 0 2px rgba(255,255,255,0.15) inset,
-    0 8px 0 0 #303030,
-    0 8px 0 1px rgba(0,0,0,0.4),
-    0 8px 8px 1px rgba(0,0,0,0.5);
+    0 8px 0 0 #bbbbbb,
+    0 8px 0 1px #bbbbbb66,
+    0 8px 8px 1px #00000080;
 }
 /* button hover color */
 #next-button:hover{
@@ -194,8 +195,8 @@ body{
 	box-shadow: 0 0 0 1px #4b7882 inset,
 	0 0 0 2px rgba(255,255,255,0.15) inset,
 	0 8px 0 0 #4b7882,
-	0 8px 0 1px rgba(0,0,0,.4),
-	0 8px 8px 1px rgba(0,0,0,0.4);
+    0 8px 0 1px #bbbbbb66,
+    0 8px 8px 1px #00000080;
 }
 #back-button:hover{
     border: 1vmin solid #fa5a5a;
@@ -205,6 +206,27 @@ body{
     box-shadow: 0 0 0 1px #C24032 inset,
     0 0 0 2px rgba(255,255,255,0.15) inset,
     0 8px 0 0 #C24032,
-    0 8px 0 1px rgba(0,0,0,0.4),
-    0 8px 8px 1px rgba(0,0,0,0.5);
+    0 8px 0 1px #bbbbbb66,
+    0 8px 8px 1px #00000080;
+}
+/* button active color */
+#next-button:active{
+    border: 1vmin solid #7ac4d5;
+    background-color: #7ac4d5;
+    transition: 0ms;
+    box-shadow: 0 0 0 1px #4b7882 inset,
+	0 0 0 2px rgba(255,255,255,0.15) inset,
+	0 8px 0 0 #4b7882,
+    0 8px 0 1px #bbbbbb66,
+    0 8px 8px 1px #00000080;
+}
+#back-button:active{
+    border: 1vmin solid #e65252;
+    background-color: #e65252;
+    transition: 0ms;
+    box-shadow: 0 0 0 1px #C24032 inset,
+    0 0 0 2px rgba(255,255,255,0.15) inset,
+    0 8px 0 0 #C24032,
+    0 8px 0 1px #bbbbbb66,
+    0 8px 8px 1px #00000080;
 }
