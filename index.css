@@ -180,7 +180,7 @@ body{
     display: grid;
     place-items: center;
     cursor: pointer;
-    box-shadow: 0 0 0 1px #bbb inset,    0 0 0 4px #ffffff26 inset, 0 4px 0 0 #bbbbbb,    0 8px 0 1px #bbbbbb66,    0 8px 8px 1px #00000080;
+    box-shadow: 0 0 0 1px #bbb inset,    0 0 0 4px #ffffff26 inset, 0 8px 0 0 #bbbbbb,    0 8px 0 1px #bbbbbb66,    0 6px 8px 1px #00000080;
 }
 /* button hover color */
 #next-button:hover{
@@ -188,14 +188,14 @@ body{
     background-color: #7fccde;
     transition: 0ms;
     color: #fff;
-    box-shadow: 0 0 0 1px #69a7b5 inset,	0 0 0 4px #ffffff26 inset,	0 4px 0 0 #6dafbe,    0 8px 0 1px #bbbbbb66,    0 8px 8px 1px #00000080;
+    box-shadow: 0 0 0 1px #69a7b5 inset,	0 0 0 4px #ffffff26 inset,	0 8px 0 0 #6dafbe,    0 8px 0 1px #bbbbbb66,    0 6px 8px 1px #00000080;
 }
 #back-button:hover{
     border: 1vmin solid #fa5a5a;
     background-color: #fa5a5a;
     transition: 0ms;
     color: #fff;
-    box-shadow: 0 0 0 1px #dc4f4f inset,    0 0 0 4px #ffffff26 inset, 0 4px 0 0 #dc4f4f,    0 8px 0 1px #bbbbbb66,    0 8px 8px 1px #00000080;
+    box-shadow: 0 0 0 1px #dc4f4f inset,    0 0 0 4px #ffffff26 inset, 0 8px 0 0 #dc4f4f,    0 8px 0 1px #bbbbbb66,    0 6px 8px 1px #00000080;
 }
 /* button active color */
 #next-button:active{
@@ -203,12 +203,13 @@ body{
     background-color: #6dafbe;
     transition: 0ms;
     box-shadow: 0 0 0 1px #69a7b5 inset, 0 0 0 4px #ffffff26 inset;
-    position:relative; top: 4px
+    position:relative; top: 9.1px
 }
 #back-button:active{
     border: 1vmin solid #ea5151;
     background-color: #ea5151;
     transition: 0ms;
-    box-shadow: 0 0 0 1px #dc4f4f inset, 0 0 0 4px #ffffff26 inset;
-    position:relative; top: 4px;
+    box-shadow: 0 0 0 1px #dc4f4f inset,    0 0 0 5px #ffffff26 inset;
+
+    position:relative; top: 9.1px;
 }
