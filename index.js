@@ -2,7 +2,8 @@ let activeIndex = 0;
 
 const groups = document.getElementsByClassName("card-group");
 // Next button handler
-const handleNextClick = () => {
+export const handleNextClick = () => {
+    alert("right")
     const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
@@ -18,7 +19,8 @@ const handleNextClick = () => {
     });
 }
 // Back button handler
-const handleBackClick = () => {
+export const handleBackClick = () => {
+    alert("left")
     const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
@@ -33,3 +35,7 @@ const handleBackClick = () => {
         activeIndex = nextIndex;
     });
 }
+
+export default {handleBackClick, handleNextClick}
+window.handleBackClick = handleBackClick;
+window.handleNextClick = handleNextClick;
