@@ -1,0 +1,33 @@
+{
+  "name": "cards",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --config webpack.config.js"
+  },
+  "author": "cjegeonu",
+  "license": "ISC",
+  "description": "\\",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjegeonu/cards.git"
+  },
+  "keywords": [
+    "cards"
+  ],
+  "bugs": {
+    "url": "https://github.com/cjegeonu/cards/issues"
+  },
+  "homepage": "https://github.com/cjegeonu/cards#readme",
+  "devDependencies": {
+    "babel-loader": "^9.2.1",
+    "eslint": "^9.17.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^29.7.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

@@ -22,7 +22,7 @@ const handleBackClick = () => {
     const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
-         nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
+        nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
     currentGroup.dataset.status = "before";
 
@@ -31,5 +31,5 @@ const handleBackClick = () => {
     setTimeout(() => {
         nextGroup.dataset.status = "active";
         activeIndex = nextIndex;
-      });
-    }
+    });
+}
