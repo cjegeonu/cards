@@ -77,63 +77,63 @@ body{
   }
 /* card pictures + positioning */
 .big-card:nth-child(2){
-    background-image: url(big/1.png);
+    background-image: url(public/big/1.png);
     transform: translateX(-10%) rotate(-1deg);
     box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
 }
 .big-card:nth-child(4){
-    background-image: url(big/2.png);
+    background-image: url(public/big/2.png);
     transform: rotate(2deg);
     box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
 }
 .big-card:nth-child(6){
-    background-image: url(big/3.png);
+    background-image: url(public/big/3.png);
     transform: translateX(-6%) rotate(-3deg);
     box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
 }
 .big-card:nth-child(8){
-    background-image: url(big/4.png);
+    background-image: url(public/big/4.png);
     transform: translate(10%, 3%) rotate(5deg);
     box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
 }
 /* second & third card picture + positioning */
 .card-group[data-index="1"] > .big-card:nth-child(6){
-    background-image: url(big/4.png)
+    background-image: url(public/big/4.png)
 }
 .card-group[data-index="1"] > .big-card:nth-child(8){
-    background-image: url(big/3.png)
+    background-image: url(public/big/3.png)
 }
 .card-group[data-index="2"] > .big-card:nth-child(4){
-    background-image: url(big/4.png)
+    background-image: url(public/big/4.png)
 }
 .card-group[data-index="2"] > .big-card:nth-child(8){
-    background-image: url(big/2.png)
+    background-image: url(public/big/2.png)
 }
 /* little card picture + positioning */
 .little-card:nth-child(1){
-    background-image: url(small/1.png)
+    background-image: url(public/big/1.png)
 }
 .little-card:nth-child(3){
-    background-image: url(small/2.png)
+    background-image: url(public/big/2.png)
 }
 .little-card:nth-child(5){
-    background-image: url(small/3.png)
+    background-image: url(public/big/3.png)
 }
 .little-card:nth-child(7){
-    background-image: url(small/4.png)
+    background-image: url(public/big/4.png)
 }
 /* second & third little card picture + positioning */
 .card-group[data-index="1"] > .little-card:nth-child(5){
-    background-image: url(small/4.png)
+    background-image: url(public/big/4.png)
 }
 .card-group[data-index="1"] > .little-card:nth-child(7){
-    background-image: url(small/3.png)
+    background-image: url(public/big/3.png)
 }
 .card-group[data-index="2"] > .little-card:nth-child(3){
-    background-image: url(small/4.png)
+    background-image: url(public/big/4.png)
 }
 .card-group[data-index="2"] > .little-card:nth-child(7){
-    background-image: url(small/2.png)
+    background-image: url(public/big/2.png)
 }
 /* big card hover rotations */
 .card-group:hover > .big-card:nth-child(2){
