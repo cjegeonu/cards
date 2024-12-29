@@ -1,4 +1,5 @@
 let activeIndex = 0;
+import "./index.css"
 
 const groups = document.getElementsByClassName("card-group");
 // Next button handler

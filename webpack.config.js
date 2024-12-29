@@ -22,6 +22,13 @@ export default {
         test: /\.(css)?$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '/public/big/[name].[ext]'
+        }
+      }
     ],
   },
   resolve: {
@@ -29,7 +36,7 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template:  './index.html',
+      template: './index.html',
     })
   ],
   devServer: {
