@@ -4,7 +4,6 @@ import "./index.css"
 const groups = document.getElementsByClassName("card-group");
 // Next button handler
 export const handleNextClick = () => {
-    alert("right")
     const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
@@ -21,7 +20,6 @@ export const handleNextClick = () => {
 }
 // Back button handler
 export const handleBackClick = () => {
-    alert("left")
     const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
 
     const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
